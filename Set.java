@@ -18,22 +18,33 @@ public class Set {
         n = 0;
     }
 
-    public void add(String item) {
-        boolean distinct = true;
-        for (Obliterator i = iterator(); i.hasNext(); ) {
-            Node current = i.next();
-            if (current.item.equals(item)) {
-                distinct = false;
-                current.count++;
-                break;
+    public boolean isDouble(String word) {
+        Node currentNode = first;
+        boolean compare = false;
+        while (currentNode != null && !compare) {
+            if (!(currentNode.item.equals(word))) {
+                currentNode = currentNode.next;
+            } else {
+                compare = true;
             }
         }
-        if (distinct) {
-            Node oldfirst = first;
-            first = new Node(oldfirst, item, 1);
-            n++;
+        if (currentNode == null) {
+            return false;
+        } else {
+            currentNode.count++;
+            return compare;
         }
-        total++;
+    }
+
+    public void add(String item) {
+        if (!isDouble(item)) {
+            Node next = new Node(first, item, 1);
+            first = next;
+            n++;
+            total++;
+        } else {
+            total++; 
+        }
     }
 
     public String removeFirst() {
