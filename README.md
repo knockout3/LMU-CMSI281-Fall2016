@@ -1,6 +1,5 @@
 # LMU-CMSI281-Fall2016
 Repository for CMSI 281 for the semester of Fall 2016
 
-hello
-
-A Whole New World!
+Objectives, Topics, Course Outcomes
+This is the first in a two-course sequence about fundamental data structures, algorithms, and algorithm paradigms of computing. In this course we will focus on various kinds of collections (e.g., lists, hash tables, trees, graphs); we'll discuss their definition, characterize their asymptotic behavior, and consider various implementation and allocation strategies. We’ll cover basic algorithms for searching, sorting, manipulating and traversing the lists, trees, etc. We'll discuss industry-standard implementations of key data structures, such as the Java Collections Framework, and applications of these data structures and their algorithms in real-world computing problems. After this course, students should be able to implement key data structures from first principles in any language of their choosing; should be able to know, derive and demonstrate understanding of asymptotic runtimes; and should be able to leverage data structures and algorithms in practical applications.
