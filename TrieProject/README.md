@@ -2,4 +2,8 @@ This Trie Project for CMSI 281 was made in collaboration with Brayden Matsuzaki 
 
 A trie, or a prefix tree, is an ordered tree data structure that is used to store a dynamic set or associative array.  
 In this project, we are required to input a text file and output the most common words the occured within the inserted 
-text file.  
+text file. Within this folder, a text file is provided.  To run this file, pipe in the text file into Trie.java:
+
+$ java Trie < file.txt
+
+The program should output the top 10 most frequent words in the text file.
